@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz App</h1>
+        <label for="tema">Elige un tema:</label>
+        <select id="tema">
+            <!-- Los temas se cargarán dinámicamente -->
+        </select>
+        <div id="quiz-container" style="display: none;">
+            <div class="question">
+                <p id="pregunta"></p>
+                <input type="text" id="respuesta">
+            </div>
+            <button id="submit-answer">Enviar Respuesta</button>
+            <p id="feedback"></p>
+        </div>
+        <button id="start-quiz">Obtener una nueva pregunta</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
